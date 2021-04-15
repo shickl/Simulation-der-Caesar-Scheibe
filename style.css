@@ -39,6 +39,7 @@ button {
 }
 
 #buttons {
+    z-index: 3;
     left: 10%;
     top: 100px;
     position: relative;
