@@ -1,19 +1,17 @@
-let angle = 0;
+let winkel = 0;
+let scheibeAussen = document.getElementById('scheibeAussen');
 
-function rotateImage() {
-    angle = ( angle + ( 360.0 / 26 ) ) % 360;
-    var img = document.getElementById('scheibeAussen');
-    img.style.transform = "rotate(" + angle.toString() + "deg)";
+function scheibeDrehen() {
+    winkel = ( winkel + 360 / 26 ) % 360;
+    scheibeAussen.style.transform = "rotate(" + winkel.toString() + "deg)";
 }
 
-function rotateImageBackwards() {
-    angle = (angle - (360.0 / 26)) % 360;
-    var img = document.getElementById('scheibeAussen');
-    img.style.transform = "rotate(" + angle.toString() + "deg)";
+function scheibeRueckwaertsDrehen() {
+    winkel = (winkel - 360 / 26) % 360;
+    scheibeAussen.style.transform = "rotate(" + winkel.toString() + "deg)";
 }
 
 function verschiebenUm(verschiebezahl) {
-    angle = 360 - (verschiebezahl * (360.0 / 26));
-    var img = document.getElementById('scheibeAussen');
-    img.style.transform = "rotate(" + angle.toString() + "deg)";
+    winkel = 360 - (verschiebezahl * 360 / 26);
+    scheibeAussen.style.transform = "rotate(" + winkel.toString() + "deg)";
 }
