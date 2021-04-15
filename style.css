@@ -1,0 +1,45 @@
+#scheibe {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    left: 30%;
+}
+
+#scheibeAussen {
+    z-index: 1;
+    width: 550px;
+}
+
+#scheibeInnen {
+    z-index: 2;
+    top: 7.7%;
+    left: 10.4%;
+    position: absolute;
+    width: 426px;
+}
+
+p {
+    position: relative;
+    color: grey;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: Large;
+}
+
+button {
+    background-color: #164654;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 27px;
+    margin: .2%;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 36px;
+}
+
+#buttons {
+    left: 10%;
+    top: 100px;
+    position: relative;
+}

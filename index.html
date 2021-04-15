@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<html lang="de">
+
+</html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Caesar-Scheibe </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<div>
+
+    <p id="aufforderung">Wähle aus, auf welchen Buchstaben das A verschoben werden soll.
+    </p>
+    <div id="buttons">
+        <button type="button" onclick="verschiebenUm(1);">B</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(2);">C</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(3);">D</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(4);">E</button>&nbsp;<button type="button" onclick="verschiebenUm(5);">F</button>
+        <br>
+        <button type="button" onclick="verschiebenUm(6);">G</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(7);">H</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(8);">I</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(9);">J</button>&nbsp;<button type="button" onclick="verschiebenUm(10);">K</button>
+        <br>
+        <button type="button" onclick="verschiebenUm(11);">L</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(12);">M</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(13);">N</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(14);">O</button>&nbsp;<button type="button" onclick="verschiebenUm(15);">P</button>
+        <br>
+        <button type="button" onclick="verschiebenUm(16);">Q</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(17);">R</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(18);">S</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(19);">T</button>&nbsp;<button type="button" onclick="verschiebenUm(20);">U</button>
+        <br>
+        <button type="button" onclick="verschiebenUm(21);">V</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(22);">W</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(23);">X</button>&nbsp;<button type="button"
+            onclick="verschiebenUm(24);">Y</button>&nbsp;<button type="button" onclick="verschiebenUm(25);">Z</button>
+    </div>
+    <div id="scheibe">
+        <img src="Bilder/scheibeAussen-transparent.png" id="scheibeAussen" onclick="rotateImage();"
+            oncontextmenu="rotateImageBackwards(); return false;" alt="" />
+        <img src="Bilder/scheibeInnen-transparent.png" id="scheibeInnen" onclick="rotateImage();"
+            oncontextmenu="rotateImageBackwards(); return false;" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
